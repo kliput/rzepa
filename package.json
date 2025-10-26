@@ -1,0 +1,19 @@
+{
+  "name": "rzepa",
+  "version": "0.1",
+  "description": "",
+  "license": "MIT",
+  "author": "Jakub Liput",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@eslint/js": "^9.38.0",
+    "eslint": "^9.38.0",
+    "globals": "^16.4.0",
+    "jsdom": "^27.0.1"
+  }
+}
