@@ -4,7 +4,7 @@
   "description": "",
   "license": "MIT",
   "author": "Jakub Liput",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,8 +12,9 @@
   },
   "dependencies": {
     "@eslint/js": "^9.38.0",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.1",
     "globals": "^16.4.0",
-    "jsdom": "^27.0.1"
+    "jsdom": "^27.0.1",
+    "yargs": "^18.0.0"
   }
 }

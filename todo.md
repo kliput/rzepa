@@ -1,0 +1,5 @@
+- [>] flaga do pozostawiania htmli
+- [ ] wycinanie obrazków
+- [>] podawanie listy plików lub katalogów jako rest params
+- [>] podawanie katalogu --output-dir
+- [ ] podawanie urli -> wymaga autoryzacji
