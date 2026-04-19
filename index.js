@@ -108,17 +108,17 @@ class Converter {
       return document.querySelector(selector);
     }
 
-    const titleElement = select('.blog--title');
+    const titleElement = select('.articleTitle');
     const authorElement = select('.author .name a');
-    const contentElements = document.querySelectorAll('.article--paragraph, .article--header');
+    const contentElements = document.querySelectorAll('.articleBodyBlock, .article--header');
 
     /** @type {Array<OutputElement>} */
     const output = [
       out(titleElement, 'h1'),
       out(authorElement, 'header'),
-      out(select('.blog--subtitle'), 'p'),
+      out(select('.blog--subtitle,.article--lead'), 'p'),
       ...[...contentElements]
-        .filter(element => !element.matches('.paywallNoAccessWrapperOuter *'))
+        .filter(element => !element.matches('.paywallNoAccessWrapperOuter *, .block--content--excerpt'))
         .map(contentElement => out(contentElement))
     ];
 
